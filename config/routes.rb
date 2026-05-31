@@ -17,6 +17,7 @@ devise_for :users,
 
   namespace :api do
     namespace :v1 do
+      resources :products
       get "profile", to: "profile#show"
     end
   end
